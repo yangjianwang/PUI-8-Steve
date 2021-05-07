@@ -1,0 +1,520 @@
+body,
+html {
+  overflow-x: hidden;
+}
+/*creating bars*/
+#leftbar {
+  position: fixed;
+  left: 24px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 99999;
+}
+#leftbar .line {
+  width: 24px;
+  height: 2px;
+  background-color: #fff;
+  margin-bottom: 10px;
+}
+#leftbar .line.sure {
+  height: 10px;
+}
+.topbar {
+  position: fixed;
+  top: 70px;
+  right: 86px;
+  z-index: 999;
+}
+.topbar a {
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  display: inline-block;
+}
+.topbar a:nth-child(2) {
+  margin-right: 38px;
+}
+#index .pngbox img {
+  width: 100%;
+  filter: url(#noise);
+}
+#index .box2 .png {
+  filter: url(#noise2);
+}
+#index .page3btn img {
+  filter: url(#noise3);
+}
+#index .page4btn img {
+  filter: url(#noise4);
+}
+#index .page5btn img {
+  filter: url(#noise5);
+}
+#index .page6btn img {
+  filter: url(#noise6);
+}
+#index .rightpng {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-10%, -50%);
+  width: 600px;
+  height: 480px;
+}
+#index .rightpng svg {
+  position: absolute;
+}
+#index .rightpng .fl {
+  width: 200px;
+  height: 160px;
+  position: relative;
+}
+#index .rightpng .fl .png {
+  width: 100%;
+}
+#index .rightpng .fl:nth-child(4),
+#index .rightpng .fl:nth-child(5),
+#index .rightpng .fl:nth-child(9),
+#index .rightpng .fl:nth-child(7) {
+  opacity: 0.7;
+}
+#index .rightpng .png {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+#index .box {
+  position: relative;
+}
+#index .box .contxt {
+  position: absolute;
+  left: 80px;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+#index .box .contxt .tit {
+  font-size: 40px;
+  font-weight: bold;
+  color: #fff;
+  text-align: left;
+  padding-bottom: 26px;
+}
+#index .box .contxt .desc {
+  font-size: 14px;
+  padding-bottom: 28px;
+  color: #fff;
+  text-align: left;
+}
+#index .box .contxt .smalltxt {
+  font-size: 12px;
+  padding-bottom: 28px;
+  color: #fff;
+  text-align: left;
+}
+#index .box .contxt .defaultbtn {
+  width: 115px;
+  height: 44px;
+  line-height: 44px;
+  color: #fff;
+  text-align: center;
+  display: block;
+  background-color: #000;
+}
+#index .box1 {
+  width: 100vw;
+  height: 100vh;
+  background: transparent url('../images/14.png') no-repeat top scroll;
+  background-size: cover;
+}
+#index .box2 {
+  width: 100vw;
+  height: 100vh;
+  background: transparent url('../images/14.png') no-repeat top scroll;
+  background-size: cover;
+  position: relative;
+}
+#index .box2 svg {
+  left: 0;
+  top: 0;
+  position: absolute;
+}
+#index .box2 svg:not(:root) {
+  overflow: hidden;
+}
+#index .box3 {
+  width: 100vw;
+  height: 100vh;
+  background: transparent url('../images/p3/1.png') no-repeat top scroll;
+  background-size: cover;
+  position: relative;
+}
+#index .box3 .pngbox {
+  width: 670px;
+  position: absolute;
+  right: 125px;
+  top: 50%;
+  transform: translate(0, -50%) !important;
+  cursor: pointer;
+}
+#index .box3 .pngbox svg {
+  position: absolute;
+}
+#index .box3 .pngbox img {
+  display: block;
+  width: 100%;
+  position: relative;
+}
+#index .box4 {
+  width: 100vw;
+  height: 100vh;
+  background: transparent url('../images/p4/bj.png') no-repeat top scroll;
+  background-size: cover;
+  position: relative;
+}
+#index .box4 .pngbox {
+  width: 670px;
+  position: absolute;
+  right: 125px;
+  top: 50%;
+  transform: translate(0, -50%) !important;
+  cursor: pointer;
+}
+#index .box4 .pngbox svg {
+  position: absolute;
+}
+#index .box4 .pngbox img {
+  display: block;
+  width: 100%;
+}
+#index .box5 {
+  width: 100vw;
+  height: 100vh;
+  background: transparent url('../images/p1/bj.png') no-repeat top scroll;
+  background-size: cover;
+}
+#index .box5 .pngbox {
+  position: absolute;
+  right: 125px;
+  top: 50%;
+  transform: translate(0, -50%) !important;
+  cursor: pointer;
+}
+#index .box5 .pngbox svg {
+  position: absolute;
+}
+#index .box5 .pngbox img {
+  display: block;
+  width: 100%;
+}
+.box6 {
+  width: 100vw;
+  height: 100vh;
+  background: transparent url('../images/p2/bj.png') no-repeat top scroll;
+  background-size: cover;
+}
+.box6 .pngbox {
+  width: 670px;
+  position: absolute;
+  right: 125px;
+  top: 50%;
+  transform: translate(0, -50%) !important;
+  cursor: pointer;
+}
+.box6 .pngbox img {
+  display: block;
+  width: 100%;
+}
+/* page3 */
+#page3 {
+  padding-top: 310px;
+  background: #000 url('../images/p3/1.png') no-repeat top fixed;
+  background-size: cover;
+  z-index: 4;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  bottom: 0;
+  overflow: auto;
+  display: none;
+}
+#page3 .leftbar {
+  position: fixed !important;
+  left: 24px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+#page3 .leftbar .line {
+  width: 24px;
+  height: 2px;
+  background-color: #fff;
+  margin-bottom: 10px;
+}
+#page3 .leftbar .line.sure {
+  height: 10px;
+}
+#page3 .tit {
+  font-size: 34px;
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+  padding-bottom: 42px;
+}
+#page3 .desc {
+  font-size: 18px;
+  color: #fff;
+  padding-bottom: 104px;
+  line-height: 30px;
+}
+#page3 .mainpng {
+  width: 680px;
+  display: block;
+  margin: auto;
+  padding-bottom: 210px;
+}
+#page3 .mainpng .png {
+  width: 100%;
+  display: block;
+  margin: 0 auto 100px auto;
+}
+#page3 .mainpng .btn-group {
+  flex-wrap: nowrap;
+}
+#page3 .mainpng .btn-group .btn {
+  width: 33%;
+}
+#page3 .mainpng .btn-group .btn img {
+  display: block;
+  width: 90%;
+  margin: auto;
+}
+#page3 .backbtn {
+  color: #fff;
+  font-size: 38px;
+  text-align: center;
+  font-weight: bold;
+  display: block;
+  padding-bottom: 130px;
+}
+/* page4 */
+#page4 {
+  padding-top: 310px;
+  background: #000 url('../images/p4/bj.png') no-repeat top fixed;
+  background-size: cover;
+  z-index: 4;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  bottom: 0;
+  overflow: auto;
+  display: none;
+}
+#page4 .leftbar {
+  position: fixed;
+  left: 24px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+#page4 .leftbar .line {
+  width: 24px;
+  height: 2px;
+  background-color: #fff;
+  margin-bottom: 10px;
+}
+#page4 .leftbar .line.sure {
+  height: 10px;
+}
+#page4 .tit {
+  font-size: 34px;
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+  padding-bottom: 42px;
+}
+#page4 .tit small {
+  font-size: 12px;
+  text-align: center;
+  color: #fff;
+}
+#page4 .btn-group {
+  padding-bottom: 120px;
+  width: 1198px;
+  margin: auto;
+}
+#page4 .btn-group .btn {
+  width: 33%;
+}
+#page4 .btn-group .btn img {
+  display: block;
+  width: 98%;
+  margin: auto;
+}
+#page4 .btn-group .btn .txt {
+  font-size: 18px;
+  color: #fff;
+  text-align: center;
+  display: block;
+  padding-top: 20px;
+}
+#page4 .maintit {
+  text-align: center;
+  font-size: 18px;
+  color: #fff;
+  padding-bottom: 246px;
+}
+#page4 .backbtn {
+  color: #fff;
+  font-size: 38px;
+  text-align: center;
+  font-weight: bold;
+  display: block;
+  padding-bottom: 130px;
+}
+/* page5 */
+#page5 {
+  padding-top: 310px;
+  background: #000 url('../images/p1/bj.png') no-repeat top fixed;
+  background-size: cover;
+  z-index: 4;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  bottom: 0;
+  overflow: auto;
+  display: none;
+}
+#page5 .mianbox {
+  margin-bottom: 150px;
+  margin-top: 150px;
+}
+#page5 .conbox {
+  display: flex;
+  width: 1098px;
+  margin: auto;
+  margin-bottom: 60px;
+  align-items: center;
+}
+#page5 .conbox .fl {
+  width: 50%;
+  flex-grow: 1;
+}
+#page5 .conbox .fl .desc {
+  text-align: left;
+  color: #fff;
+  padding: 0 30px;
+}
+#page5 .conbox .fl img {
+  display: block;
+  width: 100%;
+}
+#page5 .leftbar {
+  position: fixed;
+  left: 24px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+#page5 .leftbar .line {
+  width: 24px;
+  height: 2px;
+  background-color: #fff;
+  margin-bottom: 10px;
+}
+#page5 .leftbar .line.sure {
+  height: 10px;
+}
+#page5 .tit {
+  font-size: 34px;
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+  padding-bottom: 42px;
+}
+#page5 .tit small {
+  font-size: 12px;
+  text-align: center;
+  color: #fff;
+}
+#page5 .maintit {
+  text-align: center;
+  font-size: 18px;
+  color: #fff;
+  padding-bottom: 246px;
+}
+#page5 .backbtn {
+  color: #fff;
+  font-size: 38px;
+  text-align: center;
+  font-weight: bold;
+  display: block;
+  padding-bottom: 130px;
+}
+
+/* page6 */
+
+#page6 {
+  padding-top: 310px;
+  background: #000 url('../images/p2/bj.png') no-repeat top fixed;
+  background-size: cover;
+  z-index: 4;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  bottom: 0;
+  overflow: auto;
+  display: none;
+}
+#page6 .leftbar {
+  position: fixed;
+  left: 24px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+#page6 .leftbar .line {
+  width: 24px;
+  height: 2px;
+  background-color: #fff;
+  margin-bottom: 10px;
+}
+#page6 .leftbar .line.sure {
+  height: 10px;
+}
+#page6 .tit {
+  font-size: 34px;
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+  padding-bottom: 42px;
+}
+#page6 .tit small {
+  font-size: 12px;
+  text-align: center;
+  color: #fff;
+}
+#page6 .desc {
+  font-size: 18px;
+  color: #fff;
+  padding-bottom: 104px;
+  line-height: 30px;
+}
+#page6 .mainpng {
+  width: 680px;
+  display: block;
+  margin: auto;
+  padding-bottom: 210px;
+}
+#page6 .mainpng .png {
+  width: 100%;
+  display: block;
+  margin: 0 auto 100px auto;
+}
+#page6 .backbtn {
+  color: #fff;
+  font-size: 38px;
+  text-align: center;
+  font-weight: bold;
+  display: block;
+  padding-bottom: 130px;
+}
